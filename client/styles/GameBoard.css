@@ -5,17 +5,18 @@
     
 }
 
-.instructions {
+.status {
     padding: 2rem;
 }
 
 .main-square {
   /* width: 80%; */
   display: grid;
-  grid-template-columns: 10em 10rem 10rem;
-  grid-template-rows: 10em 10rem 10rem;
-  background-color: #ffffff4d;
-  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: #ffffff33;
+  margin: 10px;
+  
   column-gap: 0.1rem;
   row-gap: 0.1rem;
 }
