@@ -6,6 +6,9 @@
     padding: 1rem 2rem;
     margin: 1rem 0;
     border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #470943;
 }
 
 .square img {

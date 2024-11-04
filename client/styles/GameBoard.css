@@ -6,7 +6,21 @@
 }
 
 .status {
-    padding: 2rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+.status button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    border: none;
+    color: #470943;
+    font-size: 90%;
+}
+
+.status button:hover {
+    cursor: pointer;
 }
 
 .main-square {

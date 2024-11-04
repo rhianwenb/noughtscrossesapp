@@ -34,6 +34,7 @@ export default function GameBoard() {
   let status;
   if (winner) {
     status = `Winner: ${winner} !`;
+
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
@@ -52,7 +53,11 @@ export default function GameBoard() {
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
     console.log(squares)
-    
+  };
+
+  function playAgain() {
+    setSquares([null]);
+    console.log("Let's Play!")
   };
 
 
@@ -60,7 +65,11 @@ export default function GameBoard() {
     <>
 
         <div className="gameboard">
-            <div className="status"> {status} </div> 
+            <div className="status"> <h3> {status} </h3>
+              { winner  && 
+                <button onClick={playAgain}> Play Again </button>
+              } 
+            </div> 
             
             <div className="main-square">
 
